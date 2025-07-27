@@ -4,10 +4,10 @@ from pymysql.cursors import DictCursor
 
 class DB(object):
 	"""Initialize mysql database """
-	host = "switchyard.proxy.rlwy.net"
-	user = "root"
-	password = "dMaPMbfeHAqaUTTeUkQyyZcwAQzLSnNo"
+	host = "switchback.proxy.rlwy.net"
+	password = "bMaNuluKXwQIhTPDnOFhtfpaRLFhLjug"
 	db = "railway"
+	user = "root"
 	table = ""
 
 
@@ -16,7 +16,7 @@ class DB(object):
 		app.config["MYSQL_DATABASE_USER"] = self.user;
 		app.config["MYSQL_DATABASE_PASSWORD"] = self.password;
 		app.config["MYSQL_DATABASE_DB"] = self.db;
-		app.config['MYSQL_DATABASE_HOST'] = 'switchyard.proxy.rlwy.net:19108';
+		app.config['MYSQL_DATABASE_HOST'] = 'switchback.proxy.rlwy.net:16546';
 
 		self.mysql = MySQL(app, cursorclass=DictCursor)
 
