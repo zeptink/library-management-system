@@ -9,6 +9,8 @@ class DB(object):
 	password = "dMaPMbfeHAqaUTTeUkQyyZcwAQzLSnNo"
 	db = "railway"
 	table = ""
+	app.config['MYSQL_DATABASE_HOST'] = 'switchyard.proxy.rlwy.net:19108'
+
 
 	def __init__(self, app):
 		app.config["MYSQL_DATABASE_HOST"] = self.host;
