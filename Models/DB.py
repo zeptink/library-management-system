@@ -16,7 +16,9 @@ class DB(object):
 		app.config["MYSQL_DATABASE_USER"] = self.user;
 		app.config["MYSQL_DATABASE_PASSWORD"] = self.password;
 		app.config["MYSQL_DATABASE_DB"] = self.db;
-		app.config['MYSQL_DATABASE_HOST'] = 'switchback.proxy.rlwy.net:16546';
+		app.config['MYSQL_DATABASE_HOST'] = 'switchback.proxy.rlwy.net';
+		app.config['MYSQL_DATABASE_PORT'] = 16546;
+
 
 		self.mysql = MySQL(app, cursorclass=DictCursor)
 
